@@ -1,0 +1,128 @@
+:root {
+    --fundo-principal: #121212;
+    --fundo-secundario: #1e1e1e;
+    --dourado: #d4af37;
+    --texto-claro: #f0f0f0;
+    --texto-cinza: #cccccc;
+    --borda-card: #2a2a2a;
+  }
+  
+  body {
+    font-family: 'Segoe UI', sans-serif;
+    background-color: var(--fundo-principal);
+    color: var(--texto-claro);
+  }
+  
+  /* Navbar */
+  .navbar {
+    background-color: #000 !important;
+  }
+  
+  .navbar-brand {
+    color: var(--dourado) !important;
+    font-weight: bold;
+    font-size: 1.6rem;
+  }
+  
+  .navbar .nav-link {
+    color: var(--texto-claro) !important;
+  }
+  
+  .navbar .nav-link:hover {
+    color: var(--dourado) !important;
+  }
+  
+  #campo-pesquisa {
+    background-color: #222;
+    border: none;
+    color: white;
+  }
+  
+  #campo-pesquisa::placeholder {
+    color: #aaa;
+  }
+  
+  /* Cabeçalho */
+  header {
+    background: linear-gradient(to bottom right, #222, #000);
+    color: var(--dourado);
+    text-align: center;
+    padding: 60px 20px;
+  }
+  
+  header h1 {
+    font-size: 3rem;
+  }
+  
+  header p {
+    font-size: 1.2rem;
+    color: var(--texto-cinza);
+  }
+  
+  /* Cards */
+  .card {
+    background-color: var(--fundo-secundario);
+    border: 1px solid var(--borda-card);
+    transition: transform 0.2s ease, box-shadow 0.2s ease;
+    cursor: pointer;
+    border-radius: 10px;
+  }
+  
+  .card:hover {
+    transform: scale(1.02);
+    box-shadow: 0 0 20px rgba(212, 175, 55, 0.2);
+  }
+  
+  .card-img-top {
+    height: 200px;
+    object-fit: cover;
+  }
+  
+  .card-body {
+    padding: 20px;
+  }
+  
+  .card-title {
+    color: var(--dourado);
+    font-weight: 600;
+  }
+  
+  .card-text {
+    color: var(--texto-cinza);
+  }
+  
+  /* Rodapé */
+  footer {
+    background-color: #000;
+    color: var(--texto-cinza);
+    padding: 40px 0 20px;
+    margin-top: 60px;
+  }
+  
+  footer h5 {
+    color: var(--dourado);
+    margin-bottom: 20px;
+  }
+  
+  footer a {
+    color: var(--texto-cinza);
+    text-decoration: none;
+  }
+  
+  footer a:hover {
+    color: var(--dourado);
+  }
+  
+  footer p {
+    font-size: 0.95rem;
+  }
+  
+  footer .copyright {
+    text-align: center;
+    margin-top: 30px;
+    color: #777;
+    font-size: 0.875rem;
+    border-top: 1px solid #333;
+    padding-top: 20px;
+  }
+  
