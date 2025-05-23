@@ -60,36 +60,28 @@
   }
   
   /* Cards */
-  .card {
-    background-color: var(--fundo-secundario);
-    border: 1px solid var(--borda-card);
-    transition: transform 0.2s ease, box-shadow 0.2s ease;
-    cursor: pointer;
-    border-radius: 10px;
-  }
-  
   .card:hover {
     transform: scale(1.02);
     box-shadow: 0 0 20px rgba(212, 175, 55, 0.2);
   }
-  
-  .card-img-top {
-    height: 200px;
-    object-fit: cover;
-  }
-  
-  .card-body {
-    padding: 20px;
-  }
-  
-  .card-title {
+
+
+  .btn-primary {
+    background-color: white;
+    border: var(--dourado) solid 2px;
     color: var(--dourado);
-    font-weight: 600;
+    border-radius: 5px;
+    padding: 10px 20px;
+    text-decoration: none;
+    font-weight: bold;
   }
-  
-  .card-text {
-    color: var(--texto-cinza);
+
+  .btn-primary:hover {
+    border: var(--dourado) solid 2px;
+    background-color: var(--dourado);
+    color: white;
   }
+
   
   /* Rodapé */
   footer {
@@ -125,4 +117,3 @@
     border-top: 1px solid #333;
     padding-top: 20px;
   }
-  
