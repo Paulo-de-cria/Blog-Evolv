@@ -39,11 +39,11 @@
     <div class="row" ng-if="!postagemSelecionada">
       <div class="col-md-4" ng-repeat="publicacao in publicacoes">
         <div class="card mb-4 shadow-sm">
-          <img ng-src="{{ publicacao.thumbImage }}">
+          <img ng-src="https://baroniimport.com.br/wp-content/uploads/2023/02/Bugatti-Chiron_Profilee-3-4-frente-1140x719-1-1024x646.jpg" alt="thumbImageAltText">
           <div class="card-body">
             <h5 class="card-title">{{ publicacao.title }}</h5>
             <p class="card-text">{{ publicacao.description }}</p>
-            <p class="info-publicacao">Publicado por {{ publicacao.profileName }} em {{ publicacao.postDate }}</p>
+            <p class="info-publicacao">Publicado por {{ profileThumbImage }} {{ publicacao.profileName }} em {{ publicacao.postDate }}</p>
             <button class="btn btn-primary" ng-click="abrirPostagem($index)">LER MAIS</button>
           </div>
         </div>
@@ -53,7 +53,7 @@
     <!-- Detalhe da postagem -->
     <div ng-if="postagemSelecionada">
       <div class="card postagem-individual">
-        <img ng-src="{{ postagemSelecionada.thumbImage }}" class="card-img-top">
+        <img ng-src="https://baroniimport.com.br/wp-content/uploads/2023/02/Bugatti-Chiron_Profilee-3-4-frente-1140x719-1-1024x646.jpg" alt="thumbImageAltText" class="card-img-top">
         <div class="card-body">
           <h3 class="card-title">{{ postagemSelecionada.title }}</h3>
           <p class="info-publicacao fs-6 mb-3">Publicado por {{ postagemSelecionada.profileName }} em {{ postagemSelecionada.postDate }}</p>
