@@ -43,6 +43,7 @@
           <div class="card-body">
             <h5 class="card-title">{{ publicacao.title }}</h5>
             <p class="card-text">{{ publicacao.description }}</p>
+            <p class="info-publicacao">Publicado por {{ publicacao.profileName }} em {{ publicacao.postDate }}</p>
             <button class="btn btn-primary" ng-click="abrirPostagem($index)">LER MAIS</button>
           </div>
         </div>
@@ -55,6 +56,7 @@
         <img ng-src="{{ postagemSelecionada.thumbImage }}" class="card-img-top">
         <div class="card-body">
           <h3 class="card-title">{{ postagemSelecionada.title }}</h3>
+          <p class="info-publicacao fs-6 mb-3">Publicado por {{ postagemSelecionada.profileName }} em {{ postagemSelecionada.postDate }}</p>
           <div class="postagem-descricao">{{ postagemSelecionada.description }}</div>
           <div class="postagem-conteudo">{{ postagemSelecionada.content }}</div>
           <button class="btn btn-secondary mt-4" ng-click="voltar()">← Voltar</button>

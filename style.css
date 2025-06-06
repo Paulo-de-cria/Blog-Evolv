@@ -83,6 +83,23 @@ header p {
   line-height: 1.4;
 }
 
+.info-publicacao {
+  color: rgba(255, 255, 255, 0.85);
+  font-style: italic;
+  font-size: 0.9rem;
+  margin-top: 8px;
+}
+
+.card .info-publicacao {
+  color: #666;
+}
+
+.bg-dark .info-publicacao,
+.postagem-individual .info-publicacao {
+  color: rgba(255, 255, 255, 0.85);
+}
+
+
 .card-text {
   color: var(--texto-cinza);
   font-size: 0.95rem;
